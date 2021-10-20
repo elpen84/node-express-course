@@ -1,13 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-
+const { getAllTasks } = require('../controllers/tasks');
 
 //routes
-router.route('/').get(( req, res) =>{
-res.send('all tasks')
+router.route('/').get(getAllTasks)
 
-})
 
 
 
