@@ -3,6 +3,7 @@ const router = express.Router();
 
 const { getAllTasks } = require('../controllers/tasks');
 
+
 //routes
 router.route('/').get(getAllTasks)
 
